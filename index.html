@@ -38,6 +38,13 @@
             </li>
           </ul>
         </nav>
+
+        <button type="button" class="mobile-open-btn">
+          <svg class="mobile-open-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+
         <address class="nav-cont">
           <ul class="nav-cont-list">
             <li class="nav-cont-item">
@@ -55,13 +62,13 @@
       </div>
     </header>
     <main>
-      <section class="main-sec">
+      <section class="main-sec hidden">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button class="main-btn" type="button">Order Service</button>
         </div>
       </section>
-      <section class="qual-sec">
+      <section class="qual-sec hidden">
         <div class="container qual-container">
           <h2 class="visually-hidden">Our Qualities</h2>
           <ul class="qual-list">
@@ -116,7 +123,7 @@
           </ul>
         </div>
       </section>
-      <section class="team-sec">
+      <section class="team-sec hidden">
         <div class="container">
           <h2 class="team-title">our team</h2>
           <ul class="team-list">
@@ -343,7 +350,7 @@
           </ul>
         </div>
       </section>
-      <section class="portf-sec">
+      <section class="portf-sec hidden">
         <div class="container portf-container">
           <h2 class="portf-main-title">our portfolio</h2>
           <ul class="portf-list">
@@ -465,7 +472,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer-page">
+    <footer class="footer-page hidden">
       <div class="container">
         <div class="footer-logo-wrap">
           <a class="logo" href="./index.html"
@@ -542,7 +549,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal-backdrop is-open">
+    <div class="modal-backdrop is-open hidden">
       <div class="modal-window">
         <button class="close-btn" type="button">
           <svg class="close-btn-svg" width="8" height="8">
@@ -614,7 +621,7 @@
             <label for="user-privacy" class="accept-btn">
               <span class="accept-span">
                 <svg class="accept-icon" width="10" height="8">
-                  <use href="./images/icons.svg#icon-Vector"></use>
+                  <use href="./images/icons.svg#icon-vector"></use>
                 </svg>
               </span>
               I accept the terms and conditions of the
