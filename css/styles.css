@@ -331,14 +331,17 @@ FOOTER
   background-color: #2e2f42;
   padding: 96px 0;
 }
-
-.footer-logo-wrap {
-  margin-bottom: 72px;
+footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  align-items: center;
 }
 
 .footer-page span {
   color: #f4f4fd;
 }
+
 footer .logo {
   width: 116px;
   margin-left: auto;
@@ -359,7 +362,6 @@ footer .logo {
 .footer-soc-wrap {
   display: flex;
   flex-direction: column;
-  margin-bottom: 72px;
 }
 
 .footer-soc-head {
@@ -381,6 +383,7 @@ footer .socmedia-link:focus {
 }
 
 .sub-text {
+  text-align: center;
   margin-top: 0;
   font-weight: 500;
   font-size: 16px;
@@ -436,9 +439,39 @@ footer .socmedia-link:focus {
 }
 
 @media screen and (min-width: 768px) {
-  .footer-page {
-    padding: 96px 16px;
+  footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
+    padding-left: 108px;
+    gap: 72px 24px;
   }
+ 
+footer .logo  {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+.footer-link-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socmedia-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-sub-wrap {
+  flex-direction: raw;
 }
 
 /* =============MODAL======================================================================= */
