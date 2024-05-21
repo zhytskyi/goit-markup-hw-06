@@ -62,13 +62,13 @@
       </div>
     </header>
     <main>
-      <section class="main-sec hidden">
+      <section class="main-sec">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button class="main-btn" type="button">Order Service</button>
         </div>
       </section>
-      <section class="qual-sec hidden">
+      <section class="qual-sec">
         <div class="container qual-container">
           <h2 class="visually-hidden">Our Qualities</h2>
           <ul class="qual-list">
@@ -123,14 +123,18 @@
           </ul>
         </div>
       </section>
-      <section class="team-sec hidden">
+      <section class="team-sec">
         <div class="container">
           <h2 class="team-title">our team</h2>
           <ul class="team-list">
             <li class="team-item">
               <img
                 class="team-img"
-                src="./images/Mark.jpg"
+                srcset="
+                  ./images/our-team/1x/mark-1.jpg 1x,
+                  ./images/our-team/2x/mark-2.jpg 2x
+                "
+                src="./images/our-team/1x/mark-1.jpg"
                 alt="Our Product Owner Matk Guerrero"
                 width="264"
                 height="260"
@@ -185,7 +189,11 @@
             <li class="team-item">
               <img
                 class="team-img"
-                src="./images/Tom.jpg"
+                srcset="
+                  ./images/our-team/1x/tom-1.jpg 1x,
+                  ./images/our-team/2x/tom-2.jpg 2x
+                "
+                src="./images/our-team/1x/tom-1.jpg"
                 alt="Our Frontend Developer Tom Ford"
                 width="264"
                 height="260"
@@ -240,7 +248,11 @@
             <li class="team-item">
               <img
                 class="team-img"
-                src="./images/Camila.jpg"
+                srcset="
+                  ./images/our-team/1x/camila-1.jpg 1x,
+                  ./images/our-team/2x/camila-2.jpg 2x
+                "
+                src="./images/our-team/1x/camila-1.jpg"
                 alt="Our marketing Camila Garcia"
                 width="264"
                 height="260"
@@ -295,7 +307,11 @@
             <li class="team-item">
               <img
                 class="team-img"
-                src="./images/Daniel.jpg"
+                srcset="
+                  ./images/our-team/1x/daniel-1.jpg 1x,
+                  ./images/our-team/2x/daniel-2.jpg 2x
+                "
+                src="./images/our-team/1x/daniel-1.jpg"
                 alt="Our UI Designer Daniel Wilson"
                 width="264"
                 height="260"
@@ -350,7 +366,7 @@
           </ul>
         </div>
       </section>
-      <section class="portf-sec hidden">
+      <section class="portf-sec">
         <div class="container portf-container">
           <h2 class="portf-main-title">our portfolio</h2>
           <ul class="portf-list">
@@ -486,7 +502,7 @@
 
         <div class="footer-soc-wrap">
           <p class="footer-soc-head">Social media</p>
-          <ul class="socmedia-list">
+          <ul class="footer-socmedia-list">
             <li class="socmedia-item">
               <a href="" class="socmedia-link">
                 <svg class="socmedia-svg" width="24" height="24">
@@ -550,8 +566,7 @@
         </div>
       </div>
     </footer>
-  
-    
+
     <div class="modal-backdrop">
       <div class="modal-window">
         <button class="close-btn" type="button">
@@ -638,24 +653,25 @@
 
     <div class="mobile-menu">
       <div class="container menu-container">
-
-        <button type="button" class="close-menu-btn"><svg class="close-menu-btn-svg" width="8" height="8">
+        <button type="button" class="close-menu-btn">
+          <svg class="close-menu-btn-svg" width="8" height="8">
             <use href="./images/icons.svg#icon-closeX"></use>
-          </svg></button>
+          </svg>
+        </button>
 
         <ul class="nav-menu-list">
-            <li>
-              <a class="nav-menu-link" href="">Studio</a>
-            </li>
-            <li>
-              <a class="nav-menu-link" href="">Portfolio</a>
-            </li>
-            <li>
-              <a class="nav-menu-link" href="">Contacts</a>
-            </li>
-          </ul>
+          <li>
+            <a class="nav-menu-link" href="">Studio</a>
+          </li>
+          <li>
+            <a class="nav-menu-link" href="">Portfolio</a>
+          </li>
+          <li>
+            <a class="nav-menu-link" href="">Contacts</a>
+          </li>
+        </ul>
 
-          <address class="nav-menu-cont">
+        <address class="nav-menu-cont">
           <ul class="nav-menu-cont-list">
             <li>
               <a class="nav-menu-cont-link" href="mailto:info@devstudio.com"
@@ -671,51 +687,48 @@
         </address>
 
         <ul class="socmedia-list">
-            <li class="socmedia-item">
-              <a href="" class="socmedia-link">
-                <svg class="socmedia-svg" width="24" height="24">
-                  <use
-                    class="socmedia-icons"
-                    href="./images/icons.svg#icon-instagram"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socmedia-item">
-              <a href="" class="socmedia-link">
-                <svg class="socmedia-svg" width="24" height="24">
-                  <use
-                    class="socmedia-icons"
-                    href="./images/icons.svg#icon-twitter"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socmedia-item">
-              <a href="" class="socmedia-link">
-                <svg class="socmedia-svg" width="24" height="24">
-                  <use
-                    class="socmedia-icons"
-                    href="./images/icons.svg#icon-facebook"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socmedia-item">
-              <a href="" class="socmedia-link">
-                <svg class="socmedia-svg" width="24" height="24">
-                  <use
-                    class="socmedia-icons"
-                    href="./images/icons.svg#icon-linkedin"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-
-        </nav>
+          <li class="socmedia-item">
+            <a href="" class="socmedia-link">
+              <svg class="socmedia-svg" width="24" height="24">
+                <use
+                  class="socmedia-icons"
+                  href="./images/icons.svg#icon-instagram"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socmedia-item">
+            <a href="" class="socmedia-link">
+              <svg class="socmedia-svg" width="24" height="24">
+                <use
+                  class="socmedia-icons"
+                  href="./images/icons.svg#icon-twitter"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socmedia-item">
+            <a href="" class="socmedia-link">
+              <svg class="socmedia-svg" width="24" height="24">
+                <use
+                  class="socmedia-icons"
+                  href="./images/icons.svg#icon-facebook"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socmedia-item">
+            <a href="" class="socmedia-link">
+              <svg class="socmedia-svg" width="24" height="24">
+                <use
+                  class="socmedia-icons"
+                  href="./images/icons.svg#icon-linkedin"
+                ></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
-
   </body>
 </html>
